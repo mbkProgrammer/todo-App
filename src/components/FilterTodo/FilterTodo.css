@@ -1,0 +1,31 @@
+.FilterTodo{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+}
+
+.FilterTodo .FilterTodo__filters ul{
+    display: flex;
+    align-items: center;
+}
+
+.FilterTodo .FilterTodo__filters ul li button{
+    background-color: #eee;
+    border: none;
+    padding: 3px;
+    border-radius: 3px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.FilterTodo .FilterTodo__filters ul li button:hover{
+    background-color: #3498db;
+    color: #fff;
+}
+
+.FilterTodo .FilterTodo__filters ul li button.active{
+    background-color: #2980b9;
+    color: #fff;
+}

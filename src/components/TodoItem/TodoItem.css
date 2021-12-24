@@ -1,0 +1,54 @@
+.TodoItem{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 20px 10px;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+.TodoItem.delete{
+    transition: 0.4s;
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.TodoItem.active.delete{
+    transition: 0.4s;
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.TodoItem.active{
+    transition: 0.8s ease-in-out;
+    background-color: #27ae60;
+    transform: rotateX(360deg);
+}
+.TodoItem{
+    transition: 1s ease-in-out;
+    transform: rotateX(-360deg);
+}
+
+.TodoItem input {
+    width: 30px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.TodoItem h2{
+    width: 100%;
+    cursor: pointer;
+}
+
+.TodoItem button {
+    width: 30px;
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.TodoItem button:hover {
+    color: #e74c3c;
+}
